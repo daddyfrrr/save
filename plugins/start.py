@@ -53,8 +53,12 @@ async def set(_, message):
  
     await message.reply("✅ Commands configured successfully!")
  
- 
- 
+
+@app.on_message(filters.command("start"))
+async def start(_, message):
+    if message.from_user.id not in OWNER_ID:
+        await message.reply("You are not authorized to use this command.")
+        return
  
 help_pages = [
     (
