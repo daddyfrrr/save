@@ -19,7 +19,7 @@ YTUB_COOKIES = """
 
 API_ID = os.getenv("API_ID", "25255466")
 API_HASH = os.getenv("API_HASH", "aa797f1169fb6bbee3de4869d6b76165")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7538951494:AAFqFH3IAkVrn3a0JkX6hW7GtertLmLKEx4")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 MONGO_DB = os.getenv("MONGO_DB", "mongodb+srv://savebot:JRmp4Fjgbw8vDqX8@cluster0.3nzqxpj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 OWNER_ID = list(map(int, os.getenv("OWNER_ID", "7877249692").split())) # list seperated via space
 DB_NAME = os.getenv("DB_NAME", "savebot")
@@ -31,4 +31,4 @@ IV_KEY = os.getenv("IV_KEY", "s7Yx5CpVmE3F") # for decryption
 YT_COOKIES = os.getenv("YT_COOKIES", YTUB_COOKIES)
 INSTA_COOKIES = os.getenv("INSTA_COOKIES", INST_COOKIES)
 FREEMIUM_LIMIT = int(os.getenv("FREEMIUM_LIMIT", "0"))
-PREMIUM_LIMIT = int(os.getenv("PREMIUM_LIMIT", "50000"))
+PREMIUM_LIMIT = int(os.getenv("PREMIUM_LIMIT", "500000000000"))
